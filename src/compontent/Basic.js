@@ -4,7 +4,7 @@ import Welcome from './Welcome'
 import Comment from './Comment'
 import Clock from './Clock'
 // console.log(Welcome)
-
+import ToggleButton from './ToggleButton'
 
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
@@ -46,6 +46,7 @@ function Basic(){
       <Clock increment={1}></Clock>
       <Clock increment={3}></Clock>
       <Comment date={comment.date} text={comment.text} author={comment.author}></Comment>
+      <ToggleButton></ToggleButton>
     </div>
     
   )
