@@ -6,6 +6,8 @@ import Clock from './Clock'
 // console.log(Welcome)
 import ToggleButton from './ToggleButton'
 
+import WarningBanner from './WarningBanner'
+
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
 }
@@ -47,6 +49,7 @@ function Basic(){
       <Clock increment={3}></Clock>
       <Comment date={comment.date} text={comment.text} author={comment.author}></Comment>
       <ToggleButton></ToggleButton>
+      <WarningBanner></WarningBanner>
     </div>
     
   )
