@@ -1,43 +1,45 @@
-import React, { Component } from 'react';
+import React , { Component } from 'react';
 
-class Page extends Component {
-    render(){
+class Page extends  Component{
+    render() {
         if(!this.props.warn){
-            return null;
+            return null
         }
         return (
-            <div className="warning">
-                Warning
+            <div class="warning">
+                warning
             </div>
         )
     }
 }
 
-class WarningBanner extends Component {
+class WarningBanner extends Component{
     constructor(props){
         super(props);
         this.state = {
-            showWarning : true
+            showWarning:true
         }
-        this.handleToggleClick = this.handleToggleClick.bind(this)
+        this.handleToggleClick = this.handleToggleClick.bind(this);
     }
     handleToggleClick(){
-        this.setState((prevState)=>{
-            return {
-                showWarning : !prevState.showWarning
-            }
-        })
+        this.setState((state)=>({
+            showWarning: !state.showWarning
+        }));
     }
-    render() {
+    render(){
         return (
             <div>
-               <Page warn = {this.state.showWarning}></Page>
-               <button onClick={this.handleToggleClick}>
-                    {this.state.showWarning ? 'Hide' : 'Show'}
-               </button>
+                <Page warn={this.state.showWarning}></Page>
+                <button onClick={this.handleToggleClick}>
+                    {this.state.showWarning ? '隐藏':'显示'}
+                </button>
             </div>
-        );
+        )
     }
 }
 
+
 export default WarningBanner;
+
+
+
