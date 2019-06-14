@@ -8,6 +8,8 @@ import ToggleButton from './ToggleButton'
 
 import WarningBanner from './WarningBanner'
 
+import NameForm from './Form/NameForm'
+
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
 }
@@ -50,6 +52,7 @@ function Basic(){
       <Comment date={comment.date} text={comment.text} author={comment.author}></Comment>
       <ToggleButton></ToggleButton>
       <WarningBanner></WarningBanner>
+        <NameForm></NameForm>
     </div>
     
   )
