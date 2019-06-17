@@ -9,6 +9,8 @@ import ToggleButton from './ToggleButton'
 import WarningBanner from './WarningBanner'
 
 import NameForm from './Form/NameForm'
+import Calculator from './Calculator'
+import SignUpDialog from './FancyBorder/SignUpDialog'
 
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
@@ -53,6 +55,8 @@ function Basic(){
       <ToggleButton></ToggleButton>
       <WarningBanner></WarningBanner>
         <NameForm></NameForm>
+        <Calculator></Calculator>
+        <SignUpDialog></SignUpDialog>
     </div>
     
   )
