@@ -2,18 +2,12 @@ import React, { Component } from 'react';
 
 class NumberList extends Component {
     render() {
-        const numbers = [1,2,3,4];
-        const listItems = numbers.map((item,index) => {
-            return (
-                <li key={index}>{item*2}</li>
-            )
-        });
-        console.log(listItems)
-    
+        const numbers = this.props.numbers;
+        const listItems = numbers.map((number)=>{
+            return (<li>{number}</li>)
+        })
         return (
-            <ul>
-                {listItems}
-            </ul>
+            <ul>{listItems}</ul>
         );
     }
 }

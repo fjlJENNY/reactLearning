@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Basic from './compontent/Basic'
+
+import Layout from "./component2/Layout";
+
 import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 
-ReactDOM.render(<Basic/> , document.getElementById('root'))
+// ReactDOM.render(<Basic/> , document.getElementById('root'))
+
+ReactDOM.render(<Layout />, document.getElementById('root'));
+
 
 // setInterval(
 //   function(){

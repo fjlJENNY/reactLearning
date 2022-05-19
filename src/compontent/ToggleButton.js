@@ -1,4 +1,6 @@
 import React from 'react'
+import Greeting from './Greeting'
+import LoginControl from './LoginControl'
 
 class ToggleButton extends React.Component{
     constructor(props){
@@ -19,9 +21,13 @@ class ToggleButton extends React.Component{
     }
     render(){
         return (
-            <button onClick={this.handleClick}>
-                {this.state.isToggleOn ? 'ON': 'OFF'}
-            </button>
+            <div>
+                {/* <Greeting isLoggedIn={false}></Greeting> */}
+                <LoginControl></LoginControl>
+                <button onClick={this.handleClick}>
+                    {this.state.isToggleOn ? 'ON': 'OFF'}
+                </button>
+            </div>
         )
     }
 }
