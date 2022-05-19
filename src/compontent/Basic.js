@@ -6,6 +6,10 @@ import Clock from './Clock'
 // console.log(Welcome)
 import ToggleButton from './ToggleButton'
 
+import NumberList from './NumberList'
+import FormReact from './FormReact'
+import Temperature from './Temperature'
+
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
 }
@@ -45,8 +49,11 @@ function Basic(){
       <Clock increment={2}></Clock>
       <Clock increment={1}></Clock>
       <Clock increment={3}></Clock>
+      <NumberList></NumberList>
       <Comment date={comment.date} text={comment.text} author={comment.author}></Comment>
       <ToggleButton></ToggleButton>
+      <FormReact></FormReact>
+      <Temperature></Temperature>
     </div>
     
   )
